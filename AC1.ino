@@ -11,18 +11,18 @@ const int botaoDelay = 100;
 
 void setup()
 {
-  pinMode(A0, INPUT);
-  pinMode(A1, INPUT);
-  
-  pinMode(vermelho, OUTPUT);
-  pinMode(verde, OUTPUT);
-  pinMode(azul, saida);
-  
-  Serial.begin(9600);
-	
-  Serial.println("AC1 - Meu Primeiro Projeto 2021");
-  Serial.println("                           V1.0");
-  Serial.println("Grupo: NOME AQUI               ");
+	pinMode(A0, INPUT);
+      pinMode(A1, INPUT);
+
+     pinMode(vermelho, OUTPUT);
+      pinMode(verde, OUTPUT);
+      pinMode(azul, OUTPUT);
+
+      Serial.begin(9600);
+      //print nome do projeto e grupo
+      Serial.println("AC1 - Meu Primeiro Projeto 2021");
+      Serial.println("                           V1.0");
+      Serial.println("Grupo: Comando Galicea");
 }
 
 void loop()
