@@ -12,3 +12,6 @@ Aluno do 3° Ensino Médio no Colégio Módulo
 ### Enzo Bechara Lobato
 Aluno do 3º do Ensino Médio no Colégio Módulo
 16 anos
+### Gabriel Grolla Sicchierolli
+Aluno do 3º do Ensino Médio no Colégio Módulo
+16 anos
