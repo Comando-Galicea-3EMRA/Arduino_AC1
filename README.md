@@ -16,3 +16,4 @@ Aluno do 3º do Ensino Médio no Colégio Módulo
 ### Gabriel Grolla Sicchierolli
 Aluno do 3º do Ensino Médio no Colégio Módulo
 16 anos
+![](https://github.com/Comando-Galicea-3EMRA/Arduino_AC1/blob/main/Gabriel%20Grolla.jfif)
