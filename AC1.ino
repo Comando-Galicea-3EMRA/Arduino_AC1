@@ -28,20 +28,15 @@ void setup()
 void loop()
 {
   if((millis() - lastDebounceTime1) > botaoDelay && digitalRead(botao1)){
-  	Serial.println("botao 1 apertado");
-    ledVermelho();
-  	lastDebounceTime1 = millis();
+      Serial.println("botao 1 pressionado");
+    ledVermelho(true);
+      lastDebounceTime1 = millis();
   }
-  
-  //verificador de tempetura
-  if(getTemperatura() > 30){
-    ledAzul(true);
-  }else{
-  	ledAzul(falso); 
+  if((millis() - lastDebounceTime2) > botaoDelay && digitalRead(botao2)){
+      Serial.println("botao 2 pressionado");
+    ledVermelho(false);
+      lastDebounceTime2 = millis();
   }
-  	
-  delay(10);
-}
 
 void ledVermelho(){
   estadoLedVermelho = !estadoLedVermelho;
