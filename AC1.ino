@@ -37,7 +37,24 @@ void loop()
     ledVermelho(false);
       lastDebounceTime2 = millis();
   }
-
+//teste temperatura
+  if(getTemperatura() >= 15){
+    ledAzul(true);
+    Serial.println("alta temperatura");
+  }else{
+      ledAzul(false);
+    Serial.println("temepatura ideal");
+  }
+  //teste luminosidade
+  if(getLuminosidade() > 5){
+       ledVerde(true);
+       Serial.println("alta luminosidade");
+  }else{
+      ledVerde(false);
+    Serial.println("luminosidade ideal");
+  }
+  delay(10);
+}
 void ledVermelho(){
   estadoLedVermelho = !estadoLedVermelho;
   digitalWrite(vermelho,estadoLedVermelho);
