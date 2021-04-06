@@ -24,4 +24,4 @@ Aluno do 3 °  do Ensino Médio no Colégio Módulo
 ###  Luiz Henrique Kaminskas 
 Aluno do 3 °  do Ensino Médio no Colégio Módulo 
 17  anos 
-![](https://github.com/Comando-Galicea-3EMRA/Arduino_AC1/blob/main/Gabriel%20Bordwell.jfif)
+![](https://github.com/Comando-Galicea-3EMRA/Arduino_AC1/blob/main/Luiz%20Henrique.jfif)
