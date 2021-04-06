@@ -14,10 +14,10 @@ const int botaoDelay = 10;
 
 void setup()
 {
-	pinMode(A0, INPUT);
+      pinMode(A0, INPUT);
       pinMode(A1, INPUT);
 
-     pinMode(vermelho, OUTPUT);
+      pinMode(vermelho, OUTPUT);
       pinMode(verde, OUTPUT);
       pinMode(azul, OUTPUT);
 
@@ -46,7 +46,7 @@ void loop()
     Serial.println("alta temperatura");
   }else{
       ledAzul(false);
-    Serial.println("temepatura ideal");
+    Serial.println("temperatura ideal");
   }
   //teste luminosidade
   if(getLuminosidade() > 5){
@@ -58,25 +58,25 @@ void loop()
   }
   delay(10);
 }
-void ledVermelho(){
-  estadoLedVermelho = !estadoLedVermelho;
-  digitalWrite(vermelho,estadoLedVermelho);
+
+void ledVermelho(bool estado){
+     digitalWrite(vermelho,estado);
 }
-void ledVerde(){
- //precisa fazer  
+void ledVerde(bool estado){
+     digitalWrite(verde,estado);
 }
 void ledAzul(bool estado){
-	digitalWrite(azul,estado);
+    digitalWrite(azul,estado);
 }
 
 int getTemperatura(){
-  	int temperaturaC;
-	temperaturaC = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
-  	return temperaturaC;
+      int temperaturaC;
+    temperaturaC = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
+      return temperaturaC;
 } 
 //funcao de leitura da luminosidade
 int getLuminosidade(){
-  	int luminosidade;
-	luminosidade = map(analogRead(A1), 6, 619, -3, 10);
-  	return luminosidade;
+      int luminosidade;
+    luminosidade = map(analogRead(A1), 6, 619, -3, 10);
+      return luminosidade;
 }
