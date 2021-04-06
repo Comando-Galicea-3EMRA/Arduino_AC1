@@ -1,13 +1,16 @@
-//variaveis da led
+//variaveis do led
 const int vermelho = 5;
 const int verde = 6;
-const int azul = 7
+const int azul = 7;
 
 bool estadoLedVermelho = false;
 
+//adicao botao 
 const int botao1 = 2;
+const int botao2 = 3;
 unsigned long lastDebounceTime1 = 0;
-const int botaoDelay = 100;
+unsigned long lastDebounceTime2 = 0;
+const int botaoDelay = 10;
 
 void setup()
 {
